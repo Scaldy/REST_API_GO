@@ -55,4 +55,8 @@ func main() {
 	router.HandleFunc("/people/{id}", DeletePersonEndpoint).Methods("DELETE")
 
 	log.Fatal(http.ListenAndServe(":3000", router))
+
+	holamundo = "dasdada"
+
+	log.Println(holamundo)
 }
